@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wachira Wahome</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/boxicons/2.1.0/css/boxicons.min.css">
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <nav class="bg-white sticky border-gray-200 dark:bg-gray-900">
+            <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-10">
+                <a href="#" class="flex items-center space-x-3 rtl:space-x-reverse">
+                    <img src="../portfolio/images/logo.png" class="h-8" alt="Logo" />
+                </a>
+                <div class="flex items-center md:order-2 space-x-3 md:space-x-0 rtl:space-x-reverse">
+                    <button type="button" class="flex text-md bg-gray-800 rounded-full md:me-0 focus:ring-4 focus:ring-gray-300 dark:focus:ring-gray-600" id="user-menu-button" aria-expanded="false" data-dropdown-toggle="user-dropdown" data-dropdown-placement="bottom">
+                        <span class="sr-only">Open user menu</span>
+                        <img class="w-16 h-16 rounded-full" src="https://images.unsplash.com/photo-1522529599102-193c0d76b5b6?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8YmxhY2slMjBtYWxlJTIwZmFjZXxlbnwwfHwwfHx8MA%3D%3D" alt="user">
+                    </button>
+                    <!-- Dropdown menu -->
+                    <div class="z-50 hidden my-4 text-base list-none bg-white divide-y divide-gray-100 rounded-lg shadow dark:bg-gray-700 dark:divide-gray-600" id="user-dropdown">
+                        <div class="px-4 py-3">
+                            <span class="block text-sm text-gray-900 dark:text-white">Wachira Wahome</span>
+                            <span class="block text-sm text-gray-500 truncate dark:text-gray-400">wachirawahome81@gmail.com</span>
+                        </div>
+                        <ul class="py-2" aria-labelledby="user-menu-button">
+                            <li>
+                                <a href="#" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 dark:hover:bg-gray-600 dark:text-gray-200 dark:hover:text-white">About Me</a>
+                            </li>
+                            <li>
+                                <a href="#" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 dark:hover:bg-gray-600 dark:text-gray-200 dark:hover:text-white">Skills</a>
+                            </li>
+                            <li>
+                                <a href="#" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 dark:hover:bg-gray-600 dark:text-gray-200 dark:hover:text-white">Work</a>
+                            </li>
+                            <li>
+                                <a href="#" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 dark:hover:bg-gray-600 dark:text-gray-200 dark:hover:text-white">Contacts</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <button data-collapse-toggle="navbar-user" type="button" class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600" aria-controls="navbar-user" aria-expanded="false">
+                        <span class="sr-only">Open main menu</span>
+                        <svg class="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 17 14">
+                            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 1h15M1 7h15M1 13h15"/>
+                        </svg>
+                    </button>
+                </div>
+                <div class="items-center justify-between hidden w-full md:flex md:w-auto md:order-1" id="navbar-user">
+                    <ul class="flex flex-col font-semibold p-6 md:p-0 mt-4 border border-gray-100 rounded-lg bg-gray-50 md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0 md:bg-white dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700">
+                        <li>
+                            <a href="#" class="block py-2 px-3 text-xl text-white bg-blue-700 rounded md:bg-transparent md:text-blue-700 md:p-0 md:dark:text-blue-500" aria-current="page">Home</a>
+                        </li>
+                        <li>
+                            <a href="#" class="block py-2 px-3 text-xl text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">About Me</a>
+                        </li>
+                        <li>
+                            <a href="#skills" class="block py-2 px-3 text-xl text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">Skills</a>
+                        </li>
+                        <li>
+                            <a href="#work" class="block py-2 px-3 text-xl text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">Work</a>
+                        </li>
+                        <li>
+                            <a href="#contacts" class="block py-2 px-3 text-xl text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Home Section -->
+    <section id="home" class="flex py-12 bg-gray-900">
+        <div class="container mx-auto p-6 text-center">
+            <p class="text-2xl text-white">Holla</p> <br>
+            <span class="text-4xl text-[#f0f8ff] font-semibold">Joseph Wachira</span>
+            <span class="block text-xl text-gray-300 mt-2">Web Developer</span>
+            <div class="relative items-center justify-center w-64 shadow-lg mx-auto">
+                 <img class="max-w-full h-auto rounded-t-lg shadow-2xl" src="https://images.unsplash.com/photo-1522529599102-193c0d76b5b6?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8YmxhY2slMjBtYWxlJTIwZmFjZXxlbnwwfHwwfHx8MA%3D%3D" alt="user">
+                 <!-- Overlay Effect -->
+                  <div class="absolute inset-0 bg-black bg-opacity-40 rounded-t-lg opacity-0 hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
+                    <p class="text-[#f0f8f] text-xl font-semibold">Joseph Wachira</p>
+                  </div>
+            </div>
+
+            <div class="flex flex-row items-center justify-center space-x-3 mt-6">
+              <button class="items-center justify-center border-2 border-[#f0f8ff] text-[#f0f8ff] bg-transparent hover:bg-blue-700 hover:text-gray-900 font-semibold py-2 px-4 rounded-xl shadow-md">
+                  <span class="transform -translate-x-1/2 -translate-y-1/2 transition-all duration-500">Download Resume</span>
+                  <!-- <i class="bx bx-cloud-download text-2xl text-red-900 absolute top-[50%] left-[50%] transform -translate-x-1/2 translate-y-[100%] opacity-0 hover:opacity-100 hover:translate-y-0 transition-all duration-500"></i> -->
+              </button>
+              <button class="items-center justify-center border-2 border-[#f0f8ff] text-[#f0f8ff] bg-transparent hover:bg-blue-700 hover:text-gray-900 font-semibold py-2 px-4 rounded-xl shadow-md">
+                  <span class="transform -translate-x-1/2 -translate-y-1/2 transition-all duration-500">Contact Me</span>
+                  <!-- <i class="bx bx-send text-2xl absolute top-[50%] left-[50%] transform -translate-x-1/2 translate-y-[100%] opacity-0 hover:opacity-100 hover:translate-y-0 transition-all duration-500"></i> -->
+              </button>
+            </div> 
+            
+            <ul class="outline-none flex flex-row items-center justify-center space-x-6 mt-12">
+              <a href="#" icon-popover id="popover-no-arrow" class="rounded-2xl bg-transparent"><i class='bx bxl-github bx-tada text-4xl' style='color:#ffffff' ></i></a>
+              <div icon-popover id="popover-no-arrow" role="tooltip" class="absolute z-10 invisible inline-block w-64 text-sm text-gray-500 transition-opacity duration-300 bg-white border border-gray-200 rounded-lg shadow-sm opacity-0 dark:text-gray-400 dark:border-gray-600 dark:bg-gray-800">
+                <div class="px-3 py-2 bg-gray-100 border-b border-gray-200 rounded-t-lg dark:border-gray-600 dark:bg-gray-700">
+                  <h3 class="font-semibold text-gray-900 dark:text-white">Youtube</h3>
+              </div>
+              </div>
+              <a href="#" class="rounded-2xl bg-transparent"><i class='bx bxl-linkedin bx-tada text-4xl' style='color:#ffffff' ></i></a>
+              <a href="#" class="rounded-2xl bg-transparent"><i class='bx bx-envelope bx-tada text-4xl' style='color:#ffffff' ></i></a>
+              <a href="#" class="rounded-2xl bg-transparent"><i class='bx bxl-instagram bx-tada text-4xl' style='color:#ffffff'></i></a>
+              <a href="#" class="rounded-2xl bg-transparent"><i class='bx bxl-facebook bx-tada text-4xl' style='color:#ffffff' ></i></a>
+              <a href="#" class="rounded-2xl bg-transparent"><i class='bx bxl-youtube bx-tada text-4xl' style='color:#ffffff' ></i></a>
+              
+            </ul>
+        </div>
+    </section>
+  
+    <!-- Skills Section -->
+     <section id="skills" class="flex py-20 bg-gray-900">
+      <div class="container mx-auto items-center justify-center px-10 py-8">
+      <h2 class="text-2xl font-semibold text-[#f0f8ff] text-center hover:underline">Skills</h2>
+        <div class="grid grid-cols-3 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-3 gap-6 p-4">
+          <div class="flex flex-col border-t-2 border-blue-700 px-8 py-4 space-y-4 shadow-2xl rounded-t-lg">
+            <h3 class="text-2xl text-center text-blue-700">Frontend</h3>
+            <i class='bx bxl-react text-center text-4xl text-blue-700' style='color: blue-700'></i>
+            <span class="text-[#f0f8ff] text-justify">Proficient in HTML, CSS, Tailwind CSS JavaScript, and React; experienced in building responsive, user-friendly interfaces.
+                 Strong attention to detail and a passion for delivering high-quality web applications.</span>
+          </div>
+
+          <div class="flex flex-col border-t-2 border-blue-700 px-8 py-4 space-y-4 shadow-2xl rounded-t-lg">
+            <h3 class="text-2xl text-center text-blue-700">UI/UX</h3>
+            <i class='bx bxl-figma text-center text-4xl text-blue-700' style='color: blue-700'></i>
+            <span class="text-[#f0f8ff] text-justify">Experienced in UI/UX design; skilled in creating intuitive, user-centered interfaces with Figma, Canva and Adobe XD. 
+                Strong focus on usability, aesthetics, and user satisfaction.</span>
+          </div>
+
+          <div class="flex flex-col border-t-2 border-blue-700 px-8 py-4 space-y-4 shadow-2xl rounded-t-lg">
+            <h3 class="text-2xl text-center text-blue-700">Backend</h3>
+            <i class='bx bxl-nodejs text-center text-4xl text-blue-700' style='color: blue-700'></i>
+            <span class="text-[#f0f8ff] text-justify">Proficient in backend development using MERN stack Node.js, Express, and MongoDB; experienced in building robust, scalable APIs 
+                and database management with a focus on security and performance.</span>
+          </div>
+        </div>
+      </div>
+     </section>
+
+     <!-- Contact Section -->
+      <section class="bg-gray-900">
+        <h2 class="text-3xl text-center text-[#f0f8ff] underline-blue-700 hover:underline ">Lets Talk</h2>
+        <p class="text-center text-xl text-[#f0f8ff]">Reach out to discuss exciting projects, innovative ideas, or simply connect. <br> Let's create something amazing together!</p>
+        <div class="grid grid-cols-2 mx-auto px-6 space-y-4">            
+            <form action="#" class="max-w-2xl bg-transparent mx-auto my-12 bg-[#f0f8ff] p-6 border-t-2 border-blue-700 rounded-2xl shadow-2xl">
+                <div class="mb-6">
+                    <label for="name" class="text-2xl text-blue-700">Full Name:</label>
+                    <input type="text" placeholder="eg. John Kim" autocomplete="off" class="w-full px-4 py-2 border-b border-blue-700 text-[#f0f8ff] rounded-md bg-gray-800 shadow-2xl">
+                </div>
+                <div class="mb-6">
+                    <label for="name" class="text-2xl text-blue-700">Email:</label>
+                    <input type="email" placeholder="eg. johnkim@gmail.com" autocomplete="off" class="w-full px-4 py-2 border-b border-blue-700 text-[#f0f8ff] rounded-md bg-gray-800 shadow-2xl">
+                </div>
+                <div class="mb-6">
+                    <label for="name" class="text-2xl text-blue-700">Phone:</label>
+                    <input type="phone" placeholder="eg. 07123456789" autocomplete="off" class="w-full px-4 py-2 border-b border-blue-700 text-[#f0f8ff] rounded-md bg-gray-800 shadow-2xl">
+                </div>
+                <div class="mb-6">
+                    <label for="project" class="text-2xl text-blue-700">Project:</label>
+                    <input type="text" placeholder="eg. e-commerce" autocomplete="off" class="w-full px-4 py-2 border-b border-blue-700 text-[#f0f8ff] rounded-md bg-gray-800 shadow-2xl">
+                </div>
+                <div class="mb-6">
+                    <label for="message" class="text-2xl text-blue-700">Message:</label>
+                    <textarea name="message" id="message" autocomplete="off" class="w-full px-4 py-2 text-[#f0f8ff] bg-gray-800 border-b border-blue-700 rounded-md"></textarea>
+                </div>
+                <div class="mb-6">
+                    <button type="submit" class="w-full text-center text-xl border border-blue-700 bg-transparent text-[#f0f8ff] font-semibold py-3 rounded-md hover:bg-blue-700 hover:border-bg-red-700 transition duration-500">Send</button>
+                </div>
+            </form>     
+            
+            <div class="items-center justify-center">
+                <h2>Contact Information</h2>
+                <div class="grid-cols-3 gap-6">
+                    <div class="flex flex-col ">
+                        <span>email</span>
+                    </div>
+                    <div class="flex flex-col">
+                        <span>email</span>
+                    </div>
+                </div>
+            </div>
+            </div>            
+        </div>
+
+        <!-- Footer -->
+        <div class="border-t-2 border-blue-700 mt-12"></div>
+        <div class="flex flex-col">
+            <div class="flex flex-row items-center justify-center space-x-4 mt-4">
+                <a href="#" class="rounded-2xl bg-transparent"><i class='bx bxl-linkedin text-3xl' style='color: #f0f8ff' ></i></a>
+                <a href="#" class="rounded-2xl bg-transparent"><i class='bx bx-envelope text-3xl' style='color: #f0f8ff' ></i></a>
+                <a href="#" class="rounded-2xl bg-transparent"><i class='bx bxl-instagram text-3xl' style='color: #f0f8ff'></i></a>
+                <a href="#" class="rounded-2xl bg-transparent"><i class='bx bxl-facebook text-3xl' style='color: #f0f8ff' ></i></a>
+                <a href="#" class="rounded-2xl bg-transparent"><i class='bx bxl-youtube text-3xl' style='color: #f0f8ff' ></i></a>
+            </div>
+            <div class="flex flex-row items-center justify-evenly space-x-2 p-6 mx-12">
+                <a href="#"><span class="text-xl font-semibold text-gray-500 hover:text-[#f0f8ff]">Terms of Service</span></a>
+                <a href="#"><span class="text-xl font-semibold text-gray-500 hover:text-[#f0f8ff]">Privacy Policy</span></a>
+                <a href="#"><span class="text-xl font-semibold text-gray-500 hover:text-[#f0f8ff]">FAQ</span></a>
+                <a href="#"><span class="text-xl font-semibold text-gray-500 hover:text-[#f0f8ff]">Terms of Service</span></a>
+            </div>
+            <div class="mt-2 mb-4 text-center text-gray-500">
+                &copy; 2024 WahomeWachira. All rights reserved.
+            </div>
+      </section>
+</body>
+</html>
